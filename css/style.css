@@ -1,0 +1,225 @@
+@import url('fonts.css');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    max-width: 1350px;
+    margin: 60px auto;
+    display: flex;
+}
+
+.logo {
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-size: 34px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.loaded .logo
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav_menu {
+    text-align: end;
+    width: 100%;
+    padding-top: 13px;
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.loaded .nav_menu,
+.loaded .red_button_nav
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu_item {
+    list-style: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.menu_link {
+    text-decoration: none;
+    padding: 0 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #060c31;
+    font-style: normal;
+    display: inline-block;
+}
+
+.main_title {
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 64px;
+    margin-bottom: 36px;
+    max-width: 500px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 0.4s;
+}
+
+.loaded .main_title
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 48px;
+    max-width: 375px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 1s;
+}
+
+.loaded .text
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.wrapper_section {
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px 135px 150px;
+    margin: 0 auto;
+}
+
+.text_section {
+    max-width: 50%;
+    margin-right: 70px;
+}
+
+.picture_section {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 1.5s;
+}
+
+.loaded .picture_section
+{
+    opacity: 1.25;
+    transform: translateY(0);
+}
+
+.blue_button {
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    height: 50px;
+    width: 152px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-right: 20px;
+    color: #fff;
+    background-color: #233fe2;
+    border: none;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 1.25s;
+}
+
+.blue_button:hover {
+    background-color: #405aee;
+}
+
+.red_button {
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    height: 50px;
+    width: 152px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-right: 20px;
+    border: solid 2px #ffb0b1;
+    color: #000;
+    background-color: #fff;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 1s;
+}
+
+.loaded .blue_button,
+.loaded .red_button
+{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.25s;
+}
+
+.red_button_nav:hover,
+.red_button:hover {
+    background-color: #ffcccd;
+}
+
+.red_button_nav {
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+    height: 46px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 26px;
+    color: #060c31;
+    background-color: white;
+    border: solid 2px #ffb0b1;
+    margin-left: 20px;
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+    max-width: 1550px;
+    margin: 0 auto;
+    padding-right: 200px;
+}
+
+.partners_logo {
+    margin-left: 105px;
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 2s;
+}
+
+.loaded .partners_logo
+{
+    opacity: 1;
+    transform: translateY(0);
+}
